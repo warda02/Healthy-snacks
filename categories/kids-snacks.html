@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Snacks - QuickSnacks</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .recipe-container {
+            padding: 6rem 5% 4rem;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .recipe-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .recipe-details {
+            padding: 1.5rem;
+        }
+        .recipe-meta {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+        .recipe-meta i {
+            color: var(--primary-color);
+        }
+        .fun-fact {
+            background: #fff3e0;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .fun-fact i {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuickSnacks</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="healthy-snacks.html">Healthy Snacks</a>
+                        <a href="kids-snacks.html" class="active">Snacks for Kids</a>
+                        <a href="easy-stomach.html">Easy on Stomach</a>
+                        <a href="smoothies.html">Smoothies</a>
+                    </div>
+                </li>
+                <li><a href="../reviews.html">Reviews</a></li>
+                <li><a href="../shopping-guide.html">Shopping Guide</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-container">
+        <h1>Fun & Healthy Kids Snacks</h1>
+        <p>Delicious and nutritious snacks that your kids will love!</p>
+
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="../images/pexels-nadin-sh-78971847-28442522.jpg" alt="Fruit Face Pancakes" class="recipe-image">
+                <div class="recipe-details">
+                    <h2>Fruit Face Pancakes</h2>
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 15 minutes</span>
+                        <span><i class="fas fa-user-friends"></i> 2 servings</span>
+                        <span><i class="fas fa-fire"></i> 250 calories</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>2 pancakes</li>
+                            <li>1 banana</li>
+                            <li>4 strawberries</li>
+                            <li>Blueberries</li>
+                            <li>Whipped cream</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Make your favorite pancakes</li>
+                            <li>Use banana slices for eyes</li>
+                            <li>Add strawberry halves for cheeks</li>
+                            <li>Create a smile with blueberries</li>
+                            <li>Add whipped cream details</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="../images/pexels-jill-wellington-1638660-257816.jpg" alt="Veggie Boats" class="recipe-image">
+                <div class="recipe-details">
+                    <h2>Colorful Veggie Boats</h2>
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 10 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 120 calories</span>
+                    </div>
+                    <div class="fun-fact">
+                        <i class="fas fa-star"></i> Fun Fact: Eating colorful vegetables provides different vitamins and minerals!
+                    </div>
+                    <div class="ingredients-list">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>4 celery stalks</li>
+                            <li>1/2 cup cream cheese</li>
+                            <li>Colorful bell peppers</li>
+                            <li>Cherry tomatoes</li>
+                            <li>Cucumber slices</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Clean and cut celery into 4-inch pieces</li>
+                            <li>Fill with cream cheese</li>
+                            <li>Top with colorful vegetables</li>
+                            <li>Arrange in a fun pattern</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickSnacks</h3>
+                <p>Your go-to destination for quick and healthy snack recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickSnacks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

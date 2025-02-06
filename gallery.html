@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - QuickSnacks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gallery-container {
+            padding: 6rem 5% 4rem;
+        }
+        .gallery-filters {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 1rem;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .gallery-item-overlay {
+            transform: translateY(0);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            padding: 2rem;
+        }
+        .modal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .modal-close {
+            position: absolute;
+            top: -2rem;
+            right: -2rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .modal img, .modal video {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuickSnacks</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#categories">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="categories/healthy-snacks.html">Healthy Snacks</a>
+                        <a href="categories/kids-snacks.html">Snacks for Kids</a>
+                        <a href="categories/easy-stomach.html">Easy on Stomach</a>
+                        <a href="categories/smoothies.html">Smoothies</a>
+                    </div>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="shopping-guide.html">Shopping Guide</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <h1>Gallery</h1>
+        <p>Explore our collection of snack preparations and celebrations!</p>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="recipes">Recipes</button>
+            <button class="filter-btn" data-filter="celebrations">Celebrations</button>
+            <button class="filter-btn" data-filter="videos">Videos</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="recipes">
+                <img src="./images/healthy.jpg" alt="Healthy Trail Mix">
+                <div class="gallery-item-overlay">
+                    <h3>Healthy Trail Mix</h3>
+                    <p>A perfect blend of nuts and dried fruits</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="celebrations">
+                <img src="images/celebration.jpg" alt="Community Event">
+                <div class="gallery-item-overlay">
+                    <h3>Community Cooking Event</h3>
+                    <p>Learning and sharing healthy recipes together</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="videos">
+                <video poster="images/pexels-dogu-tuncer-339534179-17585019.jpg">
+                    <source src="./images/snacks.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="gallery-item-overlay">
+                    <h3>Smoothie Making Tutorial</h3>
+                    <p>Learn how to make the perfect smoothie</p>
+                </div>
+            </div>
+
+            <!-- Add more gallery items here -->
+        </div>
+    </main>
+
+    <!-- Modal for enlarged view -->
+    <div class="modal" id="gallery-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-media-container"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickSnacks</h3>
+                <p>Your go-to destination for quick and healthy snack recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickSnacks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.getElementById('gallery-modal');
+        const modalClose = document.querySelector('.modal-close');
+        const modalMediaContainer = document.querySelector('.modal-media-container');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                modal.style.display = 'block';
+                const mediaElement = item.querySelector('img, video').cloneNode(true);
+                modalMediaContainer.innerHTML = '';
+                modalMediaContainer.appendChild(mediaElement);
+
+                if (mediaElement.tagName === 'VIDEO') {
+                    mediaElement.controls = true;
+                }
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+            const video = modalMediaContainer.querySelector('video');
+            if (video) {
+                video.pause();
+            }
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                const video = modalMediaContainer.querySelector('video');
+                if (video) {
+                    video.pause();
+                }
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

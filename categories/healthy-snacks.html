@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Snacks - QuickSnacks</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .recipe-container {
+            padding: 6rem 5% 4rem;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .recipe-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .recipe-details {
+            padding: 1.5rem;
+        }
+        .recipe-meta {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+        .recipe-meta i {
+            color: var(--primary-color);
+        }
+        .ingredients-list {
+            margin: 1rem 0;
+        }
+        .recipe-instructions {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar (same as index.html) -->
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuickSnacks</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="healthy-snacks.html" class="active">Healthy Snacks</a>
+                        <a href="kids-snacks.html">Snacks for Kids</a>
+                        <a href="easy-stomach.html">Easy on Stomach</a>
+                        <a href="smoothies.html">Smoothies</a>
+                    </div>
+                </li>
+                <li><a href="../reviews.html">Reviews</a></li>
+                <li><a href="../shopping-guide.html">Shopping Guide</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-container">
+        <h1>Healthy Snacks</h1>
+        <p>Discover our collection of nutritious and delicious healthy snacks that will keep you energized throughout the day.</p>
+        
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="../images/pexels-karolina-grabowska-4198017.jpg" alt="Trail Mix" class="recipe-image">
+                <div class="recipe-details">
+                    <h2>Homemade Trail Mix</h2>
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 5 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 150 calories</span>
+                    </div>
+                    <div class="ingredients-list">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>1 cup almonds</li>
+                            <li>1 cup cashews</li>
+                            <li>1/2 cup dried cranberries</li>
+                            <li>1/2 cup dark chocolate chips</li>
+                            <li>1/2 cup pumpkin seeds</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Mix all ingredients in a large bowl</li>
+                            <li>Store in an airtight container</li>
+                            <li>Enjoy as needed!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    </main>
+
+    <footer>
+        <!-- Footer content (same as index.html) -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickSnacks</h3>
+                <p>Your go-to destination for quick and healthy snack recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickSnacks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

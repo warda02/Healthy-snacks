@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothies - QuickSnacks</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .recipe-container {
+            padding: 6rem 5% 4rem;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .recipe-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .recipe-details {
+            padding: 1.5rem;
+        }
+        .recipe-meta {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+        .recipe-meta i {
+            color: var(--primary-color);
+        }
+        .nutrition-info {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .nutrition-info i {
+            color: #2196f3;
+        }
+        .tips {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuickSnacks</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="healthy-snacks.html">Healthy Snacks</a>
+                        <a href="kids-snacks.html">Snacks for Kids</a>
+                        <a href="easy-stomach.html">Easy on Stomach</a>
+                        <a href="smoothies.html" class="active">Smoothies</a>
+                    </div>
+                </li>
+                <li><a href="../reviews.html">Reviews</a></li>
+                <li><a href="../shopping-guide.html">Shopping Guide</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-container">
+        <h1>Refreshing Smoothies</h1>
+        <p>Discover our collection of nutritious and delicious smoothie recipes!</p>
+
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="../images/smothies.webp" alt="Berry Blast Smoothie" class="recipe-image">
+                <div class="recipe-details">
+                    <h2>Berry Blast Smoothie</h2>
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 5 minutes</span>
+                        <span><i class="fas fa-user-friends"></i> 2 servings</span>
+                        <span><i class="fas fa-fire"></i> 180 calories</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>1 cup mixed berries</li>
+                            <li>1 banana</li>
+                            <li>1 cup yogurt</li>
+                            <li>1 cup milk</li>
+                            <li>1 tbsp honey</li>
+                            <li>Ice cubes</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Add all ingredients to blender</li>
+                            <li>Blend until smooth</li>
+                            <li>Add more milk if needed</li>
+                            <li>Pour and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="../images/pexels-dogu-tuncer-339534179-17585019.jpg" alt="Tropical Green Smoothie" class="recipe-image">
+                <div class="recipe-details">
+                    <h2>Tropical Green Smoothie</h2>
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 5 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 2 servings</span>
+                        <span><i class="fas fa-fire"></i> 150 calories</span>
+                    </div>
+                    <div class="nutrition-info">
+                        <i class="fas fa-leaf"></i> Nutrition: Rich in vitamins A, C, K, and iron. Great for energy and digestion!
+                    </div>
+                    <div class="ingredients-list">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>2 cups spinach</li>
+                            <li>1 cup mango chunks</li>
+                            <li>1/2 pineapple</li>
+                            <li>1 banana</li>
+                            <li>1 cup coconut water</li>
+                            <li>1 tbsp chia seeds</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Add spinach and coconut water to blender</li>
+                            <li>Blend until smooth</li>
+                            <li>Add remaining ingredients</li>
+                            <li>Blend until creamy</li>
+                        </ol>
+                    </div>
+                    <div class="tips">
+                        <h3>Pro Tips:</h3>
+                        <ul>
+                            <li>Blend greens first for smoother texture</li>
+                            <li>Use frozen mango for thickness</li>
+                            <li>Add mint leaves for fresh flavor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickSnacks</h3>
+                <p>Your go-to destination for quick and healthy snack recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickSnacks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

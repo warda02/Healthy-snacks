@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Guide - QuickSnacks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .shopping-guide-container {
+            padding: 6rem 5% 4rem;
+        }
+        .category-section {
+            margin-bottom: 3rem;
+        }
+        .store-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 2rem;
+        }
+        .store-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .store-info {
+            flex: 1;
+        }
+        .store-name {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .store-meta {
+            display: flex;
+            gap: 2rem;
+            margin: 1rem 0;
+            color: #666;
+        }
+        .store-meta i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 1rem;
+        }
+        .product-price {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuickSnacks</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#categories">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="categories/healthy-snacks.html">Healthy Snacks</a>
+                        <a href="categories/kids-snacks.html">Snacks for Kids</a>
+                        <a href="categories/easy-stomach.html">Easy on Stomach</a>
+                        <a href="categories/smoothies.html">Smoothies</a>
+                    </div>
+                </li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="shopping-guide.html" class="active">Shopping Guide</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="shopping-guide-container">
+        <h1>Shopping Guide</h1>
+        <p>Find the best places to buy ingredients for your favorite snacks!</p>
+
+        <div class="category-section">
+            <h2>Recommended Stores</h2>
+            
+            <div class="store-card">
+                <img src="images/market.jpg" alt="Healthy Foods Market" class="store-image">
+                <div class="store-info">
+                    <h3 class="store-name">Healthy Foods Market</h3>
+                    <p>Your one-stop shop for organic and natural ingredients.</p>
+                    <div class="store-meta">
+                        <span><i class="fas fa-map-marker-alt"></i>123 Health Street</span>
+                        <span><i class="fas fa-phone"></i>(555) 123-4567</span>
+                        <span><i class="fas fa-clock"></i>9:00 AM - 9:00 PM</span>
+                    </div>
+                    <p>Specializes in organic nuts, dried fruits, and healthy snack ingredients.</p>
+                </div>
+            </div>
+
+         </div>
+
+        <div class="category-section">
+            <h2>Essential Ingredients</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/nuts.jpg" alt="Mixed Nuts" class="product-image">
+                    <div class="product-info">
+                        <h3>Organic Mixed Nuts</h3>
+                        <p>Premium quality almonds, cashews, and walnuts</p>
+                        <p class="product-price">$12.99/lb</p>
+                    </div>
+                </div>
+
+             </div>
+        </div>
+
+        <div class="category-section">
+            <h2>Kitchen Equipment</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/blender.jpg" alt="High-Speed Blender" class="product-image">
+                    <div class="product-info">
+                        <h3>Professional Blender</h3>
+                        <p>Perfect for smoothies and protein shakes</p>
+                        <p class="product-price">$99.99</p>
+                    </div>
+                </div>
+
+                <!-- Add more equipment cards here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickSnacks</h3>
+                <p>Your go-to destination for quick and healthy snack recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickSnacks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

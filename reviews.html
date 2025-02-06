@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - QuickSnacks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .reviews-container {
+            padding: 6rem 5% 4rem;
+        }
+        .review-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .reviewer-info h3 {
+            margin: 0;
+            color: var(--text-color);
+        }
+        .review-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .star-rating {
+            color: var(--accent-color);
+            margin: 0.5rem 0;
+        }
+        .review-content {
+            color: #444;
+            line-height: 1.6;
+        }
+        .add-review-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-review-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .submit-review-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuickSnacks</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#categories">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="categories/healthy-snacks.html">Healthy Snacks</a>
+                        <a href="categories/kids-snacks.html">Snacks for Kids</a>
+                        <a href="categories/easy-stomach.html">Easy on Stomach</a>
+                        <a href="categories/smoothies.html">Smoothies</a>
+                    </div>
+                </li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="shopping-guide.html">Shopping Guide</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reviews-container">
+        <h1>Customer Reviews</h1>
+        <p>See what our community has to say about our recipes!</p>
+
+        <div class="reviews-section">
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="images/user.jpg" alt="Sarah Johnson" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <h3>Sarah Johnson</h3>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="review-date">January 15, 2025</span>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <p>The trail mix recipe is amazing! I make it every week for my kids' lunchboxes. It's healthy, delicious, and keeps them energized throughout the day.</p>
+                </div>
+            </div>
+
+            <!-- Add more review cards here -->
+        </div>
+
+        <div class="add-review-form">
+            <h2>Add Your Review</h2>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div class="star-rating-input">
+                        <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review">Your Review</label>
+                    <textarea id="review" name="review" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-review-btn">Submit Review</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuickSnacks</h3>
+                <p>Your go-to destination for quick and healthy snack recipes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickSnacks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
