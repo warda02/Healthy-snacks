@@ -1,56 +1,20 @@
-# QuickSnacks Website
+# 🥗 Healthy Snacks — Website
 
-A modern, responsive website for quick and healthy snack recipes. Built with HTML5, CSS3, and JavaScript.
+A clean and attractive website for a healthy snacks brand, built with HTML and CSS.
 
-## Features
+## ✨ Features
+- 🌿 Health-focused design
+- 📱 Responsive layout
+- 🎨 Clean UI
 
-- Responsive design that works on all devices
-- Recipe categories with detailed information
-- Interactive recipe cards
-- Location-based store finder using Geolocation API
-- User reviews and feedback system
-- Image gallery for celebrations
-- Contact form with validation
+## 🛠️ Tech Stack
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
-## Project Structure
-
+## 🚀 Getting Started
+```bash
+git clone https://github.com/warda02/Healthy-snacks.git
+# Open index.html in browser
 ```
-quicksnacks/
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── images/
-├── categories/
-│   ├── healthy-snacks.html
-│   ├── kids-snacks.html
-│   ├── easy-stomach.html
-│   └── smoothies.html
-├── index.html
-├── contact.html
-├── gallery.html
-├── reviews.html
-└── shopping-guide.html
-```
-
- 
-
-## Browser Compatibility
-
-The website is compatible with:
-- Google Chrome (latest)
-- Mozilla Firefox (latest)
-- Microsoft Edge (latest)
-- Safari (latest)
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Google Maps API
-- Geolocation API
-- Font Awesome Icons
-- Google Fonts
-
- 
+---
+Made with ❤️ by [Warda Fatima](https://github.com/warda02)
